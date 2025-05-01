@@ -8,19 +8,26 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Segoe UI', sans-serif;
+      margin: 0;
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: #f0f0f0;
-      margin: 0;
-      padding: 0;
     }
-    section {
-      padding: 60px 20px;
-    }
-    .bg-profile {
-      background-color: #ffffff;
-      color: #333333;
+    .hero {
+      background: url('background.jpg') center center/cover no-repeat;
+      background-color: rgba(0, 0, 0, 0.6);
+      background-blend-mode: darken;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
     }
     .profile-img {
       width: 40vw;
@@ -31,67 +38,31 @@
       border: 4px solid #0d6efd;
       box-shadow: 0 4px 15px rgba(0,0,0,0.3);
       margin-bottom: 20px;
-      transition: transform 0.3s ease;
     }
-    .profile-img:hover {
-      transform: scale(1.05);
+    section {
+      padding: 60px 20px;
     }
-    h1, h2 {
-      font-size: 5vw;
-    }
-    @media (min-width: 768px) {
-      h1 {
-        font-size: 3rem;
-      }
-      h2 {
-        font-size: 2rem;
-      }
-      p {
-        font-size: 1.1rem;
-      }
+    .bg-profile {
+      background-color: #ffffff;
+      color: #333333;
     }
   </style>
 </head>
 <body>
 
-  <section id="sekolah" class="bg-profile text-center">
-    <div class="container">
-      <img src="profil.jpg" alt="Foto Ferdinandus" class="profile-img" data-aos="zoom-in">
-      <h2 data-aos="fade-up">Ferdinandus Pedrosa Moko</h2>
-      <p data-aos="fade-up" data-aos-delay="200"><strong>Kelas:</strong> XI TKJA</p>
-      <p data-aos="fade-up" data-aos-delay="300"><strong>Sekolah:</strong> SMKN 2 ENDE</p>
-      <p data-aos="fade-up" data-aos-delay="400"><strong>Hobi:</strong> Coding, Desain Grafis</p>
-      <p data-aos="fade-up" data-aos-delay="500"><strong>Cita-cita:</strong> Web Developer Profesional</p>
-      <p data-aos="fade-up" data-aos-delay="600" class="mt-4">
-        Puji syukur saya panjatkan kehadirat Tuhan Yang Maha Esa, karena atas rahmat-Nya saya dapat memperkenalkan diri melalui halaman profil ini.  
-        Tujuan dari profil ini adalah untuk memperkenalkan identitas, hobi, serta cita-cita saya sebagai pelajar dari SMKN 2 ENDE.  
-        Saya berharap profil ini dapat memberikan gambaran singkat mengenai siapa saya dan semangat saya dalam belajar serta berkarya.  
-        <strong>Akhir kata</strong>, semoga profil ini dapat memberikan inspirasi bagi siapa saja yang membacanya.
-      </p>
-    </div>
-  </section>
+<section class="hero" id="beranda">
+  <div data-aos="fade-down">
+    <h1>Halo, saya Ferdinandus</h1>
+  </div>
+  <div data-aos="fade-up" data-aos-delay="300">
+    <p>Siswa kelas XI TKJA di SMKN 2 ENDE</p>
+    <a href="profil.html" class="btn btn-outline-light btn-lg">Lihat Profil Sekolah</a>
+  </div>
+</section>
 
-  <section id="kontak" class="text-center" style="background-color:#000; color:#f8f9fa;">
-    <div class="container" data-aos="fade-up">
-      <h2>Akun Saya</h2>
-      <div class="d-flex justify-content-center py-4" style="gap: 60px; font-size: 3rem;">
-        <a href="https://wa.me/6285847115052" target="_blank" style="color:green;">
-          <i class="bi bi-whatsapp"></i>
-        </a>
-        <a href="https://www.instagram.com/2o082007?igsh=eGt3N2JnczF4OTRv" target="_blank" style="color:#e4405f;">
-          <i class="bi bi-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/pedro.sa.932959" target="_blank" style="color:#1877f2;">
-          <i class="bi bi-facebook"></i>
-        </a>
-      </div>
-    </div>
-  </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>
